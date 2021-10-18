@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="result">
+        <p id="result-previous"></p>
+        <p id="result-text"></p>
+      </div>
+
+      <button class="allClear" onclick="allClear()">AC</button>
+      <button class="clear" onclick="backspace()">C</button>
+      <button class="number" onclick="textResult('7')">7</button>
+      <button class="number" onclick="textResult('8')">8</button>
+      <button class="number" onclick="textResult('9')">9</button>
+      <button class="operation" onclick="symbols('/')">/</button>
+      <button class="number" onclick="textResult('4')">4</button>
+      <button class="number" onclick="textResult('5')">5</button>
+      <button class="number" onclick="textResult('6')">6</button>
+      <button class="operation" onclick="symbols('*')">*</button>
+      <button class="number" onclick="textResult('1')">1</button>
+      <button class="number" onclick="textResult('2')">2</button>
+      <button class="number" onclick="textResult('3')">3</button>
+      <button class="operation" onclick="textResult('-')">-</button>
+      <button class="dotted" onclick="decimal('.')">.</button>
+      <button class="number" onclick="textResult('0')">0</button>
+      <button class="equals" onclick="calc()">=</button>
+      <button class="operation" onclick="symbols('+')">+</button>
+    </div>
+  </div>
+</body>
+
+</html>
